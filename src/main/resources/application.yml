@@ -1,0 +1,14 @@
+#APP SPECIFIC CUSTOM PROPERTIES
+app:
+  kafka:
+    producer:
+      topic: PRAJ_TOPIC
+#SPRING PROPERTIES
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:    
+      retries: 0
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
